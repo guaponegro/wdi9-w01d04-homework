@@ -19,21 +19,32 @@ function. */
 
 // 2. Palindrome again
 
-const checkPalindrome = (str) => {
-    let lowerWord = str.toLowerCase();
-    let reverseWord = lowerWord.split("").reverse("").join("");
-    if(reverseWord === lowerWord){
-        return true;
-    } else {
-        return false;
+// const checkPalindrome = (str) => {
+//     let lowerWord = str.toLowerCase();
+//     let reverseWord = lowerWord.split("").reverse("").join("");
+//     if(reverseWord === lowerWord){
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// console.log(checkPalindrome("Racecar"));
+// console.log(checkPalindrome("Burger"));
+
+// 3. Digit Sum
+
+const sumDigits = (digit) => {
+    let changeToString = 0;
+    let newSum = digit.toString().split("");
+    for(let i = 0; i < newSum.length; i++){
+        const brandNewSum = parseInt(newSum[i]);
+        changeToString = changeToString + brandNewSum;
     }
+    return changeToString
 }
 
-console.log(checkPalindrome("Racecar"));
-console.log(checkPalindrome("Burger"));
-
-
-
+console.log(sumDigits(34));
 
 
 
