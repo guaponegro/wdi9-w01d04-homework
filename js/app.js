@@ -16,3 +16,62 @@ call it back only in the confines of that function.
 However, if you define a variable outside of a function, 
 you can always call it back because it is not confined to the 
 function. */
+
+// 2. Palindrome again
+
+const checkPalindrome = (str) => {
+    let lowerWord = str.toLowerCase();
+    let reverseWord = lowerWord.split("").reverse("").join("");
+    if(reverseWord === lowerWord){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(checkPalindrome("Racecar"));
+console.log(checkPalindrome("Burger"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
