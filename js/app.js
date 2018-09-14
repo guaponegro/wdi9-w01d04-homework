@@ -57,17 +57,48 @@ function. */
 
 // 5. Sum Array
 
-const sumArray = (arr) => {
-    let sum = 0;
-    for(i = 0; i < arr.length; i++) {
-        sum += arr[i];
+// const sumArray = (arr) => {
+//     let sum = 0;
+//     for(i = 0; i < arr.length; i++) {
+//         sum += arr[i];
+//     }
+//     console.log(sum);
+// }
+
+// sumArray([1,2, 3, 4, 5, 6]);
+
+// 6. Prime Numbers
+
+// const  checkPrime = (num) => {
+//     if(num < 2){ 
+//         return false;
+//     }
+//     for (var i = 2; i < num; i++) {
+//         if(num % i === 0){
+//             return false;
+//     } else{
+//         return true;
+// }
+// }
+// }
+// console.log(checkPrime(22));
+
+// Step 2
+
+const printPrimes = (prime) => {
+    for(let prime = 1; prime <= 100; prime++) {
+        let notPrime = false;
+        for(let i = 2; i <= prime; i++) {
+            if (prime % i === 0 && i !== prime) {
+                notPrime = true;
+            }
+        }
+        if(notPrime === false) {
+            console.log(prime);
+        }
     }
-    console.log(sum);
-}
-
-sumArray([1,2, 3, 4, 5, 6]);
-
-
+    }
+    console.log(printPrimes(99));
 
 
 
