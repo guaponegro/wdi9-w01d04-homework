@@ -34,18 +34,26 @@ function. */
 
 // 3. Digit Sum
 
-const sumDigits = (digit) => {
-    let changeToString = 0;
-    let newSum = digit.toString().split("");
-    for(let i = 0; i < newSum.length; i++){
-        const brandNewSum = parseInt(newSum[i]);
-        changeToString = changeToString + brandNewSum;
+// const sumDigits = (digit) => {
+//     let changeToString = 0;
+//     let newSum = digit.toString().split("");
+//     for(let i = 0; i < newSum.length; i++){
+//         const brandNewSum = parseInt(newSum[i]);
+//         changeToString = changeToString + brandNewSum;
+//     }
+//     return changeToString
+// }
+
+// console.log(sumDigits(34));
+
+// 4. Pythagoras
+
+const calculateSide = (sideA, sideB) => {
+    let sum = Math.pow(sideA, 2);
+    let sum2 = Math.pow(sideB, 2);
+    return Math.sqrt(sum + sum2)
     }
-    return changeToString
-}
-
-console.log(sumDigits(34));
-
+console.log(calculateSide(8, 6));
 
 
 
